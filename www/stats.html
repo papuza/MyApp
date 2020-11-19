@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final - Prog Mult</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,900;1,700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="flex-center-container" onload="stats()">
+  <div id="main-menu" class="flex-center-container stat-main-menu">
+    <h1 class="stat-title">Estadísticas</h1>
+    <table id="table-stat">
+      <tr class="header-row">
+        <th></th>
+        <th id="nameplayer1"></th>
+        <th id="nameplayer2"></th>
+      </tr>
+      <tr class="stat-row">
+        <td>Generala</td>
+        <td id="generalaPointsPlayer1"></td>
+        <td id="generalaPointsPlayer2"></td>
+      </tr>
+      <tr class="stat-row">
+        <td>Tatetí</td>
+        <td id="tatetiPointsPlayer1"></td>
+        <td id="tatetiPointsPlayer2"></td>
+      </tr>
+      <tr class="stat-row">
+        <td>Juego #3</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr class="total-row">
+        <td>Total</td>
+        <td id="totalPlayer1"></td>
+        <td id="totalPlayer2"></td>
+      </tr>
+    </table>
+    <div>
+      <a class="menu-btn" href="index.html" id="play-btn">Volver</a>
+    </div>
+  </div>
+
+  <script src="assets/index.js"></script>
+  <script src="assets/jsstorage.js"></script>
+</body>
+
+</html>

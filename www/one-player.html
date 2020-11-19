@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final - Prog Mult</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,900;1,700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body onload="showPlayer()">
+  <div id="main-menu" class="flex-center-container">
+    <h1 id="playerName">Jugador #1</h1>
+    <img id="player-photo" src="assets/img/perfil1.jpg" alt="game logo">
+    <div id="buttons" class="flex-center-container players-buttons">
+      <a href="one-player.html" class="jugador-btn flex-center-container">
+        <img id="camera-icon" src="assets/img/camera.svg" alt="foto de perfil jugador #1">
+        <p href="players.html" id="jugadores-btn">Editar foto</p>
+      </a>
+      <a href="one-player.html" class="jugador-btn flex-center-container" onclick="getName()">
+        <p href="stats.html" id="stats-btn">Editar nombre</p>
+      </a>
+      <a href="one-player.html" class="jugador-btn flex-center-container" onclick="getColor()">
+        <p href="stats.html" id="stats-btn">Editar color</p>
+      </a>
+      <div id="last-row">
+        <a class="menu-btn" href="players.html" id="play-btn">Volver</a>
+        <a class="menu-btn" href="players.html" id="play-btn" onclick="pushPlayer()">Confirmar</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/index.js"></script>
+  <script src="assets/jsstorage.js"></script>
+</body>
+
+</html>
